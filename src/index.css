@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+#app {
+    @apply bg-[#FFF085]
+}
+
+#home-page {
+    @apply w-full h-[100vh] flex flex-col flex-nowrap justify-center p-12 gap-56 items-center
+}
+
+h1, span, p {
+    @apply text-[#b72d2d] drop-shadow-2xl
+}
+
+#home-page > h1 {
+    @apply text-9xl text-center stroke-3 stroke-black
+}
+
+#restaurants {
+    @apply flex flex-row flex-nowrap
+}
+
+#left-restaurants {
+    @apply flex flex-row flex-wrap gap-12 items-center justify-center w-9/10
+}
+
+#right-restaurants {
+    @apply flex flex-col flex-wrap gap-2 items-center p-8 w-1/10
+}
+
+.restaurant-card {  
+    @apply flex flex-col flex-nowrap gap-4 rounded-2xl w-3/12 h-[600px] p-4 m-8 items-center hover:opacity-75 hover:cursor-pointer bg-[#FCB454] hover:bg-[#FF9B17]
+}
+
+.restaurant-card > h1 {
+    @apply text-4xl
+}
+
+.restaurant-card > img {
+    @apply rounded-2xl w-3/4 h-1/4
+}
+
+#new-restaurant-dialog {
+    @apply flex flex-col flex-nowrap w-[400px] h-[800px] justify-around items-center 
+}
+
+#new-restaurant-dialog > * {
+    @apply w-[300px]
+}
